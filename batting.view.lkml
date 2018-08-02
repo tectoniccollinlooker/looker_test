@@ -1,62 +1,62 @@
 view: batting {
   sql_table_name: core.batting ;;
 
-  dimension: 2_b {
+  dimension: doubles {
     type: number
     sql: ${TABLE}.2B ;;
   }
 
-  dimension: 3_b {
+  dimension: triples {
     type: number
     sql: ${TABLE}.3B ;;
   }
 
-  dimension: ab {
+  dimension: at_bats {
     type: number
     sql: ${TABLE}.ab ;;
   }
 
-  dimension: bb {
+  dimension: base_on_balls {
     type: number
     sql: ${TABLE}.bb ;;
   }
 
-  dimension: cs {
+  dimension: caught_stealing {
     type: number
     sql: ${TABLE}.cs ;;
   }
 
-  dimension: g {
+  dimension: games {
     type: number
     sql: ${TABLE}.g ;;
   }
 
-  dimension: gidp {
+  dimension: grounded_into_double_plays {
     type: number
     sql: ${TABLE}.gidp ;;
   }
 
-  dimension: h {
+  dimension: hits {
     type: number
     sql: ${TABLE}.h ;;
   }
 
-  dimension: hbp {
+  dimension: hit_by_pitch {
     type: string
     sql: ${TABLE}.hbp ;;
   }
 
-  dimension: hr {
+  dimension: home_runs {
     type: number
     sql: ${TABLE}.hr ;;
   }
 
-  dimension: ibb {
+  dimension: intentional_walks {
     type: string
     sql: ${TABLE}.ibb ;;
   }
 
-  dimension: lgid {
+  dimension: league {
     type: string
     sql: ${TABLE}.lgid ;;
   }
@@ -66,32 +66,32 @@ view: batting {
     sql: ${TABLE}.playerid ;;
   }
 
-  dimension: r {
+  dimension: runs {
     type: number
     sql: ${TABLE}.r ;;
   }
 
-  dimension: rbi {
+  dimension: runs_batted_in {
     type: number
     sql: ${TABLE}.rbi ;;
   }
 
-  dimension: sb {
+  dimension: stolen_bases {
     type: number
     sql: ${TABLE}.sb ;;
   }
 
-  dimension: sf {
+  dimension: sacrifice_flies {
     type: string
     sql: ${TABLE}.sf ;;
   }
 
-  dimension: sh {
+  dimension: sacrifice_hits {
     type: string
     sql: ${TABLE}.sh ;;
   }
 
-  dimension: so {
+  dimension: strikeouts {
     type: number
     sql: ${TABLE}.so ;;
   }
@@ -118,10 +118,4 @@ view: batting {
     drill_fields: [teams.name, teams.teamidlahman45]
   }
 
-  measure: batt_avg {
-    type: average
-    sql:  ${sb} ;;
-    #sql: ${people.bats} ;;
-    #value_format_name: decimal_0
-  }
 }
