@@ -1,92 +1,92 @@
 view: pitching {
   sql_table_name: core.pitching ;;
 
-  dimension: baopp {
+  dimension: opponents_batting_avg {
     type: string
     sql: ${TABLE}.baopp ;;
   }
 
-  dimension: bb {
+  dimension: walks {
     type: number
     sql: ${TABLE}.bb ;;
   }
 
-  dimension: bfp {
+  dimension: batters_face_by_pitcher {
     type: number
     sql: ${TABLE}.bfp ;;
   }
 
-  dimension: bk {
+  dimension: balks {
     type: number
     sql: ${TABLE}.bk ;;
   }
 
-  dimension: cg {
+  dimension: complete_games {
     type: number
     sql: ${TABLE}.cg ;;
   }
 
-  dimension: er {
+  dimension: earned_runs {
     type: number
     sql: ${TABLE}.er ;;
   }
 
-  dimension: era {
+  dimension: earned_run_avg {
     type: number
     sql: ${TABLE}.era ;;
   }
 
-  dimension: g {
+  dimension: games {
     type: number
     sql: ${TABLE}.g ;;
   }
 
-  dimension: gf {
+  dimension: games_finished {
     type: number
     sql: ${TABLE}.gf ;;
   }
 
-  dimension: gidp {
+  dimension: grounded_in_double_plays_by_opp_batter {
     type: string
     sql: ${TABLE}.gidp ;;
   }
 
-  dimension: gs {
+  dimension: games_started {
     type: number
     sql: ${TABLE}.gs ;;
   }
 
-  dimension: h {
+  dimension: hits {
     type: number
     sql: ${TABLE}.h ;;
   }
 
-  dimension: hbp {
+  dimension: batters_hit_by_pitch {
     type: string
     sql: ${TABLE}.hbp ;;
   }
 
-  dimension: hr {
+  dimension: homeruns {
     type: number
     sql: ${TABLE}.hr ;;
   }
 
-  dimension: ibb {
+  dimension: intentional_walks {
     type: string
     sql: ${TABLE}.ibb ;;
   }
 
-  dimension: ipouts {
+  dimension: outs_pitched {
     type: number
     sql: ${TABLE}.ipouts ;;
   }
 
-  dimension: l {
+  dimension: losses {
     type: number
     sql: ${TABLE}.l ;;
   }
 
-  dimension: lgid {
+  dimension: league {
     type: string
     sql: ${TABLE}.lgid ;;
   }
@@ -96,27 +96,27 @@ view: pitching {
     sql: ${TABLE}.playerid ;;
   }
 
-  dimension: r {
+  dimension: runs_allowed {
     type: number
     sql: ${TABLE}.r ;;
   }
 
-  dimension: sf {
+  dimension: sacrifice_flies_by_opp_batter {
     type: string
     sql: ${TABLE}.sf ;;
   }
 
-  dimension: sh {
+  dimension: sacrifices_by_opp_batter {
     type: string
     sql: ${TABLE}.sh ;;
   }
 
-  dimension: sho {
+  dimension: shutouts {
     type: number
     sql: ${TABLE}.sho ;;
   }
 
-  dimension: so {
+  dimension: strikeouts {
     type: number
     sql: ${TABLE}.so ;;
   }
@@ -126,7 +126,7 @@ view: pitching {
     sql: ${TABLE}.stint ;;
   }
 
-  dimension: sv {
+  dimension: saves {
     type: number
     sql: ${TABLE}.sv ;;
   }
@@ -137,12 +137,12 @@ view: pitching {
     sql: ${TABLE}.teamid ;;
   }
 
-  dimension: w {
+  dimension: wins {
     type: number
     sql: ${TABLE}.w ;;
   }
 
-  dimension: wp {
+  dimension: wild_pitches {
     type: number
     sql: ${TABLE}.wp ;;
   }
