@@ -117,4 +117,8 @@ view: batting {
     type: count
     drill_fields: [teams.name, teams.teamidlahman45]
   }
+
+  measure: average {
+    type: average
+  }
 }
