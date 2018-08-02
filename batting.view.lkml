@@ -120,7 +120,8 @@ view: batting {
 
   measure: batt_avg {
     type: average
-    sql: ${TABLE} ;;
-    value_format_name: id
+    sql:  ${sb} ;;
+    #sql: ${people.bats} ;;
+    #value_format_name: decimal_0
   }
 }
