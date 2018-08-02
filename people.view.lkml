@@ -22,12 +22,12 @@ view: people {
   }
 
   dimension: birthday {
-    type: string
+    type: date_day_of_month
     sql: ${TABLE}.birthday;;
   }
 
   dimension: birthmonth {
-    type: number
+    type: date_fiscal_month_num
     sql: ${TABLE}.birthmonth ;;
   }
 
@@ -37,7 +37,7 @@ view: people {
   }
 
   dimension: birthyear {
-    type: number
+    type: date_year
     sql: ${TABLE}.birthyear ;;
   }
 
