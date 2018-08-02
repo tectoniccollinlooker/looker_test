@@ -1,47 +1,47 @@
 view: fielding {
   sql_table_name: core.fielding ;;
 
-  dimension: a {
+  dimension: assists {
     type: number
     sql: ${TABLE}.a ;;
   }
 
-  dimension: cs {
+  dimension: opps_caught_stealing {
     type: number
     sql: ${TABLE}.cs ;;
   }
 
-  dimension: dp {
+  dimension: double_plays {
     type: number
     sql: ${TABLE}.dp ;;
   }
 
-  dimension: e {
+  dimension: errors {
     type: number
     sql: ${TABLE}.e ;;
   }
 
-  dimension: g {
+  dimension: games {
     type: number
     sql: ${TABLE}.g ;;
   }
 
-  dimension: gs {
+  dimension: games_started {
     type: number
     sql: ${TABLE}.gs ;;
   }
 
-  dimension: innouts {
+  dimension: time_played_expressed_as_outs {
     type: number
     sql: ${TABLE}.innouts ;;
   }
 
-  dimension: lgid {
+  dimension: league {
     type: string
     sql: ${TABLE}.lgid ;;
   }
 
-  dimension: pb {
+  dimension: passed_balls {
     type: number
     sql: ${TABLE}.pb ;;
   }
@@ -51,17 +51,17 @@ view: fielding {
     sql: ${TABLE}.playerid ;;
   }
 
-  dimension: po {
+  dimension: putouts {
     type: number
     sql: ${TABLE}.po ;;
   }
 
-  dimension: pos {
+  dimension: position {
     type: string
     sql: ${TABLE}.pos ;;
   }
 
-  dimension: sb {
+  dimension: opp_stolen_bases {
     type: number
     sql: ${TABLE}.sb ;;
   }
@@ -77,7 +77,7 @@ view: fielding {
     sql: ${TABLE}.teamid ;;
   }
 
-  dimension: wp {
+  dimension: wild_pitches {
     type: string
     sql: ${TABLE}.wp ;;
   }
@@ -88,7 +88,7 @@ view: fielding {
     sql: ${TABLE}.yearid ;;
   }
 
-  dimension: zr {
+  dimension: zone_rating {
     type: string
     sql: ${TABLE}.zr ;;
   }
