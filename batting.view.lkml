@@ -118,7 +118,9 @@ view: batting {
     drill_fields: [teams.name, teams.teamidlahman45]
   }
 
-  measure: average {
+  measure: batt_avg {
     type: average
+    sql: ${TABLE} ;;
+    value_format_name: id
   }
 }
