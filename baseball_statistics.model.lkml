@@ -40,11 +40,6 @@ explore: batting {
     sql_on: ${batting.teamid} = ${teams.teamidlahman45} ;;
     relationship: many_to_one
   }
-  join: people {
-    type: full_outer
-    sql_on: ${batting.playerid} = ${people.playerid} ;;
-    relationship: one_to_one
-  }
 }
 
 explore: battingpost {
@@ -111,7 +106,13 @@ explore: managershalf {
 
 explore: parks {}
 
-explore: people {}
+explore: people {
+  join: batting {
+    type: full_outer
+    sql_on: ${people.playerid} = ${batting.playerid} ;;
+    relationship: one_to_one
+  }
+}
 
 explore: pitching {
   join: teams {
