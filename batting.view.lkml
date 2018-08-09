@@ -118,4 +118,10 @@ view: batting {
     drill_fields: [teams.name, teams.teamidlahman45]
   }
 
+  measure: average_at_bat {
+    type: average
+    sql:${at_bats} ;;
+
+  }
+
 }
