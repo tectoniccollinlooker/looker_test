@@ -121,7 +121,6 @@ view: batting {
   measure: average_at_bat {
     type: average
     sql:${at_bats} ;;
-
   }
 
 }

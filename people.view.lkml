@@ -67,8 +67,13 @@ view: people {
   }
 
   dimension: deathyear {
-    type: date
+    type: date_year
     sql: ${TABLE}.deathyear ;;
+  }
+
+  dimension: deathdecade {                # Create a dimension called "decade"
+    type: number                     # Declare that "decade" has a data type of number
+    sql: FLOOR(${deathyear} / 10) * 10 ;; # Perform a SQL calculation based on the "year" dimension
   }
 
   dimension: debut {
