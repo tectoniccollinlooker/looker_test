@@ -123,4 +123,9 @@ view: batting {
     sql:${at_bats} ;;
   }
 
+  measure: total_home_runs {
+    type: sum
+    sql: ${home_runs} ;;
+  }
+
 }
