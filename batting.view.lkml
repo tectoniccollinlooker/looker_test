@@ -118,8 +118,8 @@ view: batting {
     drill_fields: [teams.name, teams.teamidlahman45]
   }
 
-  measure: average_at_bat {
-    type: average
+  measure: total_at_bat {
+    type: sum
     sql:${at_bats} ;;
   }
 
