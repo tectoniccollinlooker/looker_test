@@ -11,6 +11,7 @@ datagroup: baseball_statistics_default_datagroup {
 persist_with: baseball_statistics_default_datagroup
 
 explore: allstarfull {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${allstarfull.teamid} = ${teams.teamidlahman45} ;;
@@ -19,6 +20,7 @@ explore: allstarfull {
 }
 
 explore: appearances {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${appearances.teamid} = ${teams.teamidlahman45} ;;
@@ -26,15 +28,24 @@ explore: appearances {
   }
 }
 
-explore: awardsmanagers {}
+explore: awardsmanagers {
+  hidden: yes
+}
 
-explore: awardsplayers {}
+explore: awardsplayers {
+  hidden: yes
+}
 
-explore: awardssharemanagers {}
+explore: awardssharemanagers {
+  hidden: yes
+}
 
-explore: awardsshareplayers {}
+explore: awardsshareplayers {
+  hidden: yes
+}
 
 explore: batting {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${batting.teamid} = ${teams.teamidlahman45} ;;
@@ -43,6 +54,7 @@ explore: batting {
 }
 
 explore: battingpost {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${battingpost.teamid} = ${teams.teamidlahman45} ;;
@@ -51,6 +63,7 @@ explore: battingpost {
 }
 
 explore: collegeplaying {
+  hidden: yes
   join: schools {
     type: left_outer
     sql_on: ${collegeplaying.schoolid} = ${schools.schoolid} ;;
@@ -59,6 +72,7 @@ explore: collegeplaying {
 }
 
 explore: fielding {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${fielding.teamid} = ${teams.teamidlahman45} ;;
@@ -66,9 +80,12 @@ explore: fielding {
   }
 }
 
-explore: fieldingof {}
+explore: fieldingof {
+  hidden: yes
+}
 
 explore: fieldingofsplit {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${fieldingofsplit.teamid} = ${teams.teamidlahman45} ;;
@@ -77,6 +94,7 @@ explore: fieldingofsplit {
 }
 
 explore: fieldingpost {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${fieldingpost.teamid} = ${teams.teamidlahman45} ;;
@@ -86,9 +104,12 @@ explore: fieldingpost {
 
 explore: halloffame {}
 
-explore: homegames {}
+explore: homegames {
+  hidden: yes
+}
 
 explore: managers {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${managers.teamid} = ${teams.teamidlahman45} ;;
@@ -97,6 +118,7 @@ explore: managers {
 }
 
 explore: managershalf {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${managershalf.teamid} = ${teams.teamidlahman45} ;;
@@ -104,7 +126,9 @@ explore: managershalf {
   }
 }
 
-explore: parks {}
+explore: parks {
+  hidden: yes
+}
 
 explore: people {
   join: batting {
@@ -115,6 +139,7 @@ explore: people {
 }
 
 explore: pitching {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${pitching.teamid} = ${teams.teamidlahman45} ;;
@@ -123,6 +148,7 @@ explore: pitching {
 }
 
 explore: pitchingpost {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${pitchingpost.teamid} = ${teams.teamidlahman45} ;;
@@ -138,15 +164,22 @@ explore: salaries {
   }
 }
 
-explore: schools {}
+explore: schools {
+  hidden: yes
+}
 
-explore: seriespost {}
+explore: seriespost {
+  hidden: yes
+}
 
 explore: teams {}
 
-explore: teamsfranchises {}
+explore: teamsfranchises {
+  hidden: yes
+}
 
 explore: teamshalf {
+  hidden: yes
   join: teams {
     type: left_outer
     sql_on: ${teamshalf.teamid} = ${teams.teamidlahman45} ;;
