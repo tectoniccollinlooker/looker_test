@@ -8,7 +8,10 @@ datagroup: baseball_statistics_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+
 persist_with: baseball_statistics_default_datagroup
+
+#explore: sql_runner_query_example {}
 
 explore: allstarfull {
   hidden: yes
