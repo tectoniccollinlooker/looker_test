@@ -1,4 +1,5 @@
 view: allstarfull {
+  label: "All Start"
   sql_table_name: core.allstarfull ;;
 
   dimension: gameid {
