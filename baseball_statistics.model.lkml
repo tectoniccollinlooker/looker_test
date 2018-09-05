@@ -13,6 +13,7 @@ persist_with: baseball_statistics_default_datagroup
 #explore: sql_runner_query_example {}
 
 explore: allstarfull {
+  label: "All Star"
   join: teams {
     type: left_outer
     sql_on: ${allstarfull.teamid} = ${teams.teamidlahman45} ;;
