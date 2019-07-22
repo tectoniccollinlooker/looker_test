@@ -188,3 +188,6 @@ explore: teamshalf {
     relationship: many_to_one
   }
 }
+
+explore: census_1 {
+}
